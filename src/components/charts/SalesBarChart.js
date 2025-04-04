@@ -54,7 +54,7 @@ const SalesBarChart = () => {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        <Bar dataKey="quantity" fill="#8884d8" />
+        <Bar dataKey="quantity" fill="#0297AB" />
       </BarChart>
     </ResponsiveContainer>
   );
