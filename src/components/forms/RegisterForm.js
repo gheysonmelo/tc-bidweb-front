@@ -22,7 +22,10 @@ const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      style={{ display: "flex", flexDirection: "column", gap: "10px" }}
+    >
       <div>
         <label>Username:</label>
         <input
@@ -30,6 +33,7 @@ const RegisterForm = () => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
+          style={{ width: "100%", padding: "8px", borderRadius: "4px" }}
         />
       </div>
       <div>
@@ -39,6 +43,7 @@ const RegisterForm = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
+          style={{ width: "100%", padding: "8px", borderRadius: "4px" }}
         />
       </div>
       <div>
@@ -48,9 +53,22 @@ const RegisterForm = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          style={{ width: "100%", padding: "8px", borderRadius: "4px" }}
         />
       </div>
-      <button type="submit">Cadastrar</button>
+      <button
+        type="submit"
+        style={{
+          background: "#4CAF50",
+          color: "#fff",
+          padding: "10px",
+          border: "none",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+      >
+        Cadastrar
+      </button>
     </form>
   );
 };
