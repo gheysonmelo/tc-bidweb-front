@@ -35,8 +35,9 @@ const SaleForm = () => {
         quantity: parseInt(quantity, 10),
         saleDate: formattedDate,
         price:
-          products.find((product) => product.id === selectedProductId).value *
-          parseInt(quantity, 10),
+          products.find(
+            (product) => Number(product.id) === Number(selectedProductId)
+          ).productValue * parseInt(quantity, 10),
         product: { id: selectedProductId },
       });
       alert("Venda cadastrada com sucesso!");

@@ -40,6 +40,7 @@ export const createSale = async (saleData) => {
   };
 
   const response = await api.post("/sale", saleData, { headers });
+
   return response.data;
 };
 
