@@ -21,6 +21,7 @@ const Dashboard = () => {
           flexDirection: "column",
           gap: "40px",
           alignItems: "center",
+          color: "#F58533",
         }}
       >
         {/* Seção de formulários */}
